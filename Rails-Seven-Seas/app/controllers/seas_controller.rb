@@ -21,7 +21,7 @@ class SeasController < ApplicationController
   end
 
   def update
-    @sea = Sea.update(sea_params)
+    @sea.update(sea_params)
     redirect_to sea_path(@sea)
   end
 
